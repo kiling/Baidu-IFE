@@ -1,0 +1,62 @@
+/* * {
+	margin: 0;
+	padding: 0;
+}
+ */
+ body {
+ 	background: #e6e6e7;
+ }
+
+ img {
+ 	border: 1px black solid;
+ 	transform: rotate(5deg);
+ }
+
+ img:hover {
+ 	opacity: 0.5;
+ }
+
+.box {
+	padding: 1rem;
+	margin: 0.1rem;
+	border: 0.5px black solid;
+	box-shadow: 2.5px 0.5px;
+	text-align: center;
+}
+
+#span {
+	color: red;
+}
+
+/* ul li:nth-child(even) {
+	color: #66ccff;
+} */
+ul li {
+	list-style-type: square;
+}
+
+ul#fruit li:after {
+	content: '(水果)';
+}
+
+ol li:first-child {
+	list-style-type: lower-alpha;
+	color: #777777;
+}
+
+.hover:hover {
+	color: blue;
+}
+
+#nav li {
+	display: inline;
+}
+
+#nav li a {
+	text-decoration: none;
+	background: #afeeee;
+}
+
+#login {
+	border: #7d92da 1px solid;
+}

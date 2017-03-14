@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task2-基于Task1添加CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h3 id="head">这是一个h3标题</h3>
+	<ul id="nav">
+		<li><a href="http://www.baidu.com">Baidu</a></li>
+		<li><a href="http://www.google.com">Google</a></li>
+		<li><a href="http://www.bing.com">Bing</a></li>
+	</ul>
+	<div>
+		<article>这是一个article标签</article>
+		<p>这是一个p标签,上面是article标签，下面是footer标签，3个标签被一个div标签包围</p>
+		<footer>这是一个footer标签</footer>
+	</div>
+	<br>
+	<p>这里包含一个<span id="span">span标签</span>。其中span颜色设置为了红色。</p>
+	<a href="https://www.baidu.com">百度一下，你就知道</a>
+	<p class="hover">鼠标悬停时变为蓝色</p>
+	<div class="box">
+		<p>包含在class为box的div内,margin为0.1rem,padding为1rem,box-shadow为2.5px 0.5px,文字居中</p>
+	</div>
+	<p>下面是一个无序列表,其中，偶数行的颜色设置为#66ccff，使用:after伪元素为列表追加内容</p>
+	<ul id="fruit">水果
+		<li>苹果</li>
+		<li>桃子</li>
+		<li>火龙果</li>
+		<li>草莓</li>
+	</ul>
+	<p>下面是一个有序列表,第一个样式改为小写字母</p>
+	<ol>
+		<li>第一个</li>
+		<li>第二个</li>
+		<li>第三个</li>
+		<li>第四个</li>
+	</ol>
+	<p>这是包含<b>b标签</b>和<em>em标签</em>的一段文本。下面是一条分隔线。</p>
+	<hr>
+	<p>下面是一张图片</p>
+	<img src="./github-logo.jpg" title="这是一张图片">
+	<p>下面是表单</p>
+	<div>
+		<form id="login">
+			<p>Username: <input type="text" name="username"></p><br>
+			<p>Password: <input type="Password" name="password"></p><br>
+			<input type="submit" value="Submit">
+		</form>		
+	</div>
+	<form>
+		<label>Male</label>
+		<input type="radio" name="sex" id="male">
+		<label>Female</label>
+		<input type="radio" name="sex" id="female">
+	</form>
+	<form>
+		<p>喜欢的水果：</p>
+		<label>苹果</label>
+		<input type="checkbox" name="apple"><br>
+		<label>草莓</label>
+		<input type="checkbox" name="strawberry"><br>
+		<label>菠萝</label>
+		<input type="checkbox" name="pineapple">
+	</form>
+	<p>下面是一个表格</p>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>第一列</th>
+				<th>第二列</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Row1Col1</th>
+				<th>Row1Col2</th>
+			</tr>
+			<tr>
+				<th>Row2Col1</th>
+				<th>Row2Col2</th>
+			</tr>
+		</tbody>
+		<tfoot>
+			<th>表尾列1</th>
+			<th>表尾列2</th>
+		</tfoot>
+	</table>
+</body>
+</html>
