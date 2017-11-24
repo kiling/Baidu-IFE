@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.relative {
+			position: relative;
+			height: inherit;
+		}
+		
+		#center {
+			width:400px;
+			height: 200px;
+			background-color: #ccc;
+			margin-left: auto;
+			margin-right: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			overflow: hidden;
+		}
+		
+		#left-top, #right-bottom {
+			background-color: #fc0;
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+		
+		#left-top {
+			left: -50px;
+			top: -50px;
+		}
+		
+		#right-bottom {
+			right: -50px;
+			bottom: -50px;
+		}
+	</style>
+</head>
+<body>
+<!--实测Chrome跟IE都没有问题，其中，IE 9，10，11能正常显示，IE 8及以下的无法正常显示-->
+	<div id="center">
+		<div class="relative">
+			<div id="left-top"></div>
+			<div id="right-bottom"></div>
+		</div>
+	</div>
+</body>
+</html>
